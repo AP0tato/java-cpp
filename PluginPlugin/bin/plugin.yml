@@ -1,0 +1,14 @@
+main: com.nextlevel.Main
+name: GulagPlugin
+version: 1.0
+author: Me
+description: Gulag Plugin Thing
+commands:
+  setLocation:
+    description: Set the location of the gulag
+    usage: /setLocation <x> <y> <z>
+    permissions: nextlevel.setlocation
+  getLocation:
+    description: Get the current location of the gulag
+    usage: /getLocation
+    permissions: nextlevel.setlocation

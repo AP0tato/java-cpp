@@ -1,0 +1,22 @@
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+
+
+public class Solution {
+    public static void main(String[] args) throws IOException {
+    	char[] s = {'h', 'e', 'l', 'l', 'o'};
+    	char[] a = new char[s.length];
+    	for(int i = s.length-1, j = 0; i > 0; i--, j++)
+    	{
+    		a[j] = s[i];
+    	}
+    	System.out.println(10==Integer.class());
+    }
+}

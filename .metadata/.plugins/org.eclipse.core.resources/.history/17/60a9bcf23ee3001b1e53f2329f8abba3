@@ -1,0 +1,23 @@
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+
+
+public class Solution {
+    public static void main(String[] args) throws IOException {
+    }
+    
+    public int numDifferentIntegers(String word) {
+        int count = 0;
+        Pattern p = Pattern.compile("[0-9]+");
+        Matcher m = p.matcher(word);
+        while(m.find()) count++;
+        return count;
+    }
+}

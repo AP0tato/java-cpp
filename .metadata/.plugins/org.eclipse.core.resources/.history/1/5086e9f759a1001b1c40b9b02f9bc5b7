@@ -1,0 +1,25 @@
+import java.awt.Robot;
+import java.awt.event.InputEvent;
+import java.awt.*;
+
+public class Main {
+	public static void main(String []args) {
+		Robot robot = null;
+		try {
+			robot = new Robot();
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
+		try {
+			Thread.sleep(4000);
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
+		while(true) {
+			robot.mousePress(InputEvent.BUTTON1_MASK);
+			robot.delay(1300);
+			robot.mouseRelease(InputEvent.BUTTON1_MASK);
+			robot.delay(1300));
+		}
+	}
+}

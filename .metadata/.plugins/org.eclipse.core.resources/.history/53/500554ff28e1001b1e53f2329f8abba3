@@ -1,0 +1,23 @@
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+
+
+public class Solution {
+    public static void main(String[] args) throws IOException {
+    	addBinary("1010", "10");
+    }
+    
+    public String addBinary(String a, String b) {
+    	int a1 = Integer.parseInt(a);
+    	int b1 = Integer.parseInt(b);
+    	int c = 0b+a1;
+    	
+    }
+}

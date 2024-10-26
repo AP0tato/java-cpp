@@ -1,0 +1,27 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. */
+        Scanner in = new Scanner(System.in);
+        int n = in.nextInt();
+        String str = "";
+        Pattern p;
+        Matcher m;
+        while(n-- > 0)
+        {
+        	str += in.nextLine() + " ";
+        }
+        n = in.nextInt();
+        in.nextLine();
+        while(n-- > 0)
+        {
+        	
+        }
+    }
+}

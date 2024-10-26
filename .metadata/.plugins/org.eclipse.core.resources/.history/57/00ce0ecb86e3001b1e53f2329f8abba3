@@ -1,0 +1,9 @@
+import java.math.BigInteger;
+
+public class Testing3 {
+	public static void main(String... args)
+	{
+		BigInteger num = new BigInteger("318209174097419271309");
+		System.out.println(num.multiply(new BigInteger("3821098320")));
+	}
+}

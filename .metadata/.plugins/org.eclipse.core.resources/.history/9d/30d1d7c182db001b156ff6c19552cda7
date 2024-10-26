@@ -1,0 +1,34 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner in = new Scanner(System.in);
+        Pattern p;
+        Matcher m;
+        int n = in.nextInt();
+        in.nextLine();
+        List<String> arr = new ArrayList<>();
+        for(int i = 0; i < n; i++)
+        {
+        	arr.add(in.next());
+        }
+        n = in.nextInt();
+        in.nextLine();
+        for(int i = 0; i < n; i++)
+        {
+        	int count = 0;
+        	for(String j : arr)
+        	{
+        		p = Pattern.compile(in.next());
+        		m = p.matcher(j);
+        		while(m.find()) count++;
+        	}
+        }
+    }
+}

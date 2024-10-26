@@ -1,0 +1,22 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. */
+        Scanner in = new Scanner(System.in);
+        int n = in.nextInt();
+        in.nextLine();
+        List<String> arr = new ArrayList<>();
+        Pattern p = Pattern.compile("");
+        while(n-- > 0)
+        {
+        	arr.add(in.nextLine());
+        }
+        
+    }
+}

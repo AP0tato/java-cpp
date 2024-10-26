@@ -1,0 +1,11 @@
+21:40:18 **** Incremental Build of configuration Debug for project C++ Arm ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GNU Arm Cross C++ Compiler
+arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -std=gnu++11 -fabi-version=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.cpp"
+/bin/sh: arm-none-eabi-g++: command not found
+make: *** [src/main.o] Error 127
+"make all" terminated with exit code 2. Build might be incomplete.
+
+21:40:18 Build Failed. 2 errors, 0 warnings. (took 349ms)
+

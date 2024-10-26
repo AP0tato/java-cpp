@@ -1,0 +1,21 @@
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+
+
+public class Solution {
+    public static void main(String[] args) throws IOException {
+    	String s = "";
+    	System.out.println(s.equals(""));
+    }
+    
+    public double myPow(double x, int n) {
+        return Math.pow(x, n);
+    }
+}

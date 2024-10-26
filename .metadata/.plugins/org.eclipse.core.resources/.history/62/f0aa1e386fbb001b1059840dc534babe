@@ -1,0 +1,63 @@
+#Question 1
+rivers = {
+    'Amazon': 'Brazil',
+    'Mississippi': 'Gulf of Mexico',
+    'Nile': 'Egypt'
+}
+for i in rivers:
+    print("The " + i + " river is located in " + rivers.get(i))
+print("")
+for i in rivers:
+    print(i)
+print("")
+for i in rivers:
+    print(rivers.get(i))
+print("")
+"""
+#Question 2
+favorite_languages = {
+    'jen': 'python',
+    'sarah': 'c',
+    'edward': 'ruby',
+    'phil': 'python',
+}
+people0 = ['ali', 'muhammad', 'rabbi', 'haashir', 'jen', 'edward']
+for i in people0:
+    if(favorite_languages.has_key(i)):
+        print("Thank you for taking the poll " + i.title() + ".")
+    else:
+        n = int(input("Would you like to take the poll " + i.title() + "?\n[1] Yes\n[2] No\n"))
+        if n == 1:
+            temp = raw_input("What is your favorite programming language?\n")
+            favorite_languages[i] = temp
+print("")
+"""
+#Question 3
+person = {
+    'first_name': 'ali',
+    'last_name': 'abid',
+    'age': 14,
+    'city': 'toronto'
+}
+for i in person:
+    print(str(i) + ": " + str(person.get(i)))
+print("")
+
+person1 = {
+    'first_name': 'edward',
+    'lsat_name': 'lee',
+    'age': 15,
+    'city': 'New York City'
+}
+
+person2 = {
+    'first_name': 'phil',
+    'last_name': 'armstrong',
+    'age': 17,
+    'city': 'Montreal'
+}
+people = [person, person1, person2]
+
+for i in people:
+    for j in i:
+        print(j)

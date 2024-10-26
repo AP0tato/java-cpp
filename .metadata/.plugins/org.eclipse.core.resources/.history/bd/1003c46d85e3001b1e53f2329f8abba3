@@ -1,0 +1,31 @@
+import java.util.SortedSet;
+import java.util.TreeSet;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+
+
+public class Solution {
+    public static void main(String[] args) {
+    	int[][] arr = {{1, 2}, {2, 3}};
+    	System.out.println(findJudge(3, arr));
+    }
+    
+    public static int findJudge(int n, int[][] trust) {
+        int judge = -1;
+        SortedSet<Integer> set = new TreeSet<>();
+        for(int[] i : trust)
+        {
+            set.add(i[0]);
+        }
+        for(int i = 1; i <= n; i++)
+        {
+        	if(!set.contains(i)) {judge = i; break;}
+        }
+        for(int i : set)
+        {
+        	
+        }
+        return judge;
+    }
+}

@@ -1,0 +1,48 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) throws IOException {
+        /* Enter your code here. */
+        Scanner in = new Scanner(System.in);
+        int n = in.nextInt();
+        List<String> arr = new ArrayList<>();
+        arr.add("C");
+        arr.add("CPP");
+        arr.add("JAVA");
+        arr.add("PYTHON");
+        arr.add("PERL");
+        arr.add("PHP");
+        arr.add("RUBY");
+        arr.add("CSHARP");
+        arr.add("HASKELL");
+        arr.add("CLOJURE");
+        arr.add("BASH");
+        arr.add("SCALA");
+        arr.add("ERLANG");
+        arr.add("CLISP");
+        arr.add("LUA");
+        arr.add("BRAINFUCK");
+        arr.add("JAVASCRIPT");
+        arr.add("GO");
+        arr.add("D");
+        arr.add("OCMAL");
+        arr.add("R");
+        arr.add("PASCAL");
+        arr.add("SBCL");
+        arr.add("DART");
+        arr.add("GROOVY");
+        arr.add("OBJECTIVEC");
+        while(n-- > 0)
+        {
+        	int a = in.nextInt();
+        	String s = in.next();
+        	System.out.println(arr.contains(s)?"VALID":"INVALID");
+        	in.nextLine();
+        }
+    }
+}

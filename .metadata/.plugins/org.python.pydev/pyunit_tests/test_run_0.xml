@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?pydev-testrun version="1.0"?><pydev-testsuite>
+    <summary errors="1" failures="0" finished="true" name="Test Run: 0" tests="0" total_time="Finished in: 0.00 secs."/>
+    <test location="/Users/Ali/eclipse-workspace/Snake-Python/main.py" status="error" test="main" time="0">
+        <stdout/>
+        <stderr><![CDATA[Traceback (most recent call last):
+  File "/Applications/Java.app/Contents/Eclipse/plugins/org.python.pydev.core_8.2.0.202102211157/pysrc/_pydev_runfiles/pydev_runfiles.py", line 468, in __get_module_from_str
+    mod = __import__(modname)
+  File "/Users/Ali/eclipse-workspace/Snake-Python/main.py", line 51
+    window.geometry(f"{window_width}x{window_height}+{x}+{y}")
+                                                            ^
+SyntaxError: invalid syntax
+ERROR: Module: main could not be imported (file: /Users/Ali/eclipse-workspace/Snake-Python/main.py).
+]]></stderr>
+    </test>
+    <launch mode="run">
+        <launch_memento><![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration local="true" path="Snake-Python Snake-Python"/>
+]]></launch_memento>
+    </launch>
+</pydev-testsuite>

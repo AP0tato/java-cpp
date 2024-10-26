@@ -1,0 +1,20 @@
+import java.util.Arrays;
+import java.util.SortedSet;
+import java.util.TreeSet;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+
+
+public class Solution {
+    public static void main(String[] args) {
+    	int[] arr = {-1,-2,-3,-4,-5};
+    }
+    
+    public boolean isMatch(String s, String p) {
+        Pattern a = Pattern.compile("^"+p+"$");
+        Matcher m = a.matcher(s);
+        //return m.find();
+        return Pattern.matches("^"+p+"$", s);
+    }
+}

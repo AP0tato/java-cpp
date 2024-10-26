@@ -1,0 +1,23 @@
+import java.util.SortedSet;
+import java.util.TreeSet;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+
+
+public class Solution {
+    public static void main(String[] args) {
+    	System.out.println(numDifferentIntegers("a123bc34d8ef34"));
+    }
+    
+    public static int numDifferentIntegers(String word) {
+        int count = 0;
+        SortedSet<Integer> set = new TreeSet<>();
+        Pattern p = Pattern.compile("[0-9]+");
+        Matcher m = p.matcher(word);
+        int n = 0;
+        while(m.find()) {set.add(m.group(n)); n++}
+        for(int i : set) count++;
+        return count;
+    }
+}

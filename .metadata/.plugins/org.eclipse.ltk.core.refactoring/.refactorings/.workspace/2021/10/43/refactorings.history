@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;Key Strokes&apos;" deleteContents="true" description="Delete resource &apos;Key Strokes&apos;" element1="/Key Strokes" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1634517496421"/>&#x0A;<refactoring comment="Delete resource &apos;OpenGL_minimal&apos;" deleteContents="true" description="Delete resource &apos;OpenGL_minimal&apos;" element1="/OpenGL_minimal" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1634517559201"/>
+</session>

@@ -1,0 +1,94 @@
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.InputEvent;
+import java.awt.event.ItemEvent;
+import java.awt.event.ItemListener;
+
+import javax.swing.*;
+import java.util.*;
+
+public class Panel extends JPanel implements ActionListener{
+	static final int WIDTH = 700;
+	static final int HEIGHT = 450;
+	int delay = 1000, buttonType;
+	Dimension SCREEN_SIZE = new Dimension(WIDTH, HEIGHT);
+	JButton start, stop;
+	Font myFont = new Font("Ink Free", Font.BOLD, 10);
+	JCheckBox type, hold;
+	boolean running, holding;
+	Robot robot;
+	JTextField field;
+	event ev;
+	
+	Panel() {
+		ev = new event();
+		
+		type = new JCheckBox("Right Click");
+		hold = new JCheckBox("Hold Button");
+		
+		type.addItemListener(ev);
+		hold.addItemListener(ev);
+		
+		field = new JTextField();
+		field.setEditable(true);
+		field.setFont(myFont);
+		
+		start = new JButton("Start");
+		stop = new JButton("Stop");
+		
+		this.setPreferredSize(SCREEN_SIZE);
+		this.add(field);
+		this.add(hold);
+		this.add(type);
+		this.add(start);
+		this.add(stop);
+	}
+	
+	public void start() {
+		running = true;
+	}
+	
+	public void stop() {
+		running = false;
+	}
+	
+	public void run(int button, int delay) {
+		delay = Integer.parseInt(field.getText());
+		this.delay = delay;
+		while(running) {
+			if(holding) {
+				robot.mousePress(button);
+			} else {
+				robot.mousePress(button);
+				robot.mouseRelease(button);
+				robot.delay(delay);
+			}
+		}
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		if(e.getSource() == start) {
+			start();
+		} else if(e.getSource() == stop) {
+			stop();
+		}
+	}
+	
+	public class event implements ItemListener{
+		public void itemStateChanged(ItemEvent e) {
+			if(type.isSelected()) {
+				buttonType = InputEvent.BUTTON1_MASK;
+			} else {
+				buttonType = InputEvent.BUTTON2_MASK;
+			}
+			
+			if(hold.isSelected()) {
+				holding = true;
+			} else {
+				holding = false;
+			}
+		}
+	}
+}

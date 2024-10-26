@@ -1,0 +1,57 @@
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.regex.*;
+
+
+
+public class Solution {
+    public static void main(String[] args) throws IOException {
+        Scanner in = new Scanner(System.in);
+        int n = in.nextInt();
+        in.nextLine();
+        SortedSet<String> list = new TreeSet<>();
+        Pattern p = Pattern.compile("\\w+@[a-zA-Z]+(\\.[a-zA-Z]){1,}");
+        Matcher m;
+        while(n-- > 0)
+        {
+            m = p.matcher(in.nextLine());
+            if(m.find()) list.add(m.group(1));
+        }
+        for(String i : list)
+        {
+        	System.out.println(i);
+        }
+    }
+    
+    /**
+     * Definition for singly-linked list.
+     * public class ListNode {
+     *     int val;
+     *     ListNode next;
+     *     ListNode() {}
+     *     ListNode(int val) { this.val = val; }
+     *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+     * }
+     */
+    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+        int num1 = l1.val, num2 = l2.val, num3 = 0;
+        while(l1.next!=null)
+        {
+            num1 *= 10;
+            num1 += l1.val;
+        }
+        System.out.println(num1);
+        return l1;
+    }
+}
+class ListNode {
+    int val;
+    ListNode next;
+    ListNode() {}
+    ListNode(int val) { this.val = val; }
+    ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+   }

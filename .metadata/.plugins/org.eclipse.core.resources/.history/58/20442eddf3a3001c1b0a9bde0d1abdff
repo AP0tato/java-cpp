@@ -1,0 +1,44 @@
+package com.hi;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+public class Main {
+	
+	public static void main(String... args) throws Exception {
+		List<Integer> arr = new ArrayList<>();
+		arr.add(5);
+		arr.add(4);
+		arr.add(4);
+		arr.add(2);
+		arr.add(2);
+		arr.add(8);
+		//System.out.println(
+				cutTheSticks(arr);
+				//);
+		
+	}
+	//private static float root(double root, double num) { return (float) Math.pow(num, (double) 1/root); }
+	
+	public static List<Integer> cutTheSticks(List<Integer> arr) {
+        // Write your code here
+        List<Integer> ar = new ArrayList<Integer>();
+        Collections.sort(arr);
+        int smallest, count;
+        
+        while(arr.size()>0) {
+        	ar.add(arr.size());
+            count = 0;
+            smallest = arr.get(0);
+            for(int i = 0; i < arr.size()-1; i++) arr.set(i, arr.get(i)-smallest);
+            while(arr.get(0)==0) {
+                arr.remove(0);
+                count++;
+            }
+            System.out.println(arr);
+        }
+        
+        return ar;
+    }
+}

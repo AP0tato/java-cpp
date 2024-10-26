@@ -1,0 +1,25 @@
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.regex.*;
+
+
+
+public class Solution {
+    public static void main(String[] args) throws IOException {
+        Scanner in = new Scanner(System.in);
+        int n = in.nextInt();
+        in.nextLine();
+        SortedSet<String> list = new TreeSet<>();
+        Pattern p = Pattern.compile();
+        Matcher m;
+        while(n-- > 0)
+        {
+            m = p.matcher(in.nextLine());
+            
+        }
+    }
+}

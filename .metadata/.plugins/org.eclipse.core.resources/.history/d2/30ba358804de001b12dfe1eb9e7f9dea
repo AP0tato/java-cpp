@@ -1,0 +1,29 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+  
+    // Template Credit goes to www.hackerrank.com/kogupta 
+    private static boolean isValidPAN(String s) {
+        Pattern p = Pattern.compile("^([A-Z]{5})([0-9]{4})[A-Z]$");
+        Matcher m = p.matcher(s);
+        return m.find();
+    }
+
+    public static void main(String[] args) {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        try {
+            int i = Integer.parseInt(br.readLine());
+            for (int j = 0; j < i; j++) {
+                String s = br.readLine();
+                System.out.println(isValidPAN(s) ? "YES" : "NO");
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        } 
+    }
+}

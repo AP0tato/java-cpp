@@ -1,0 +1,20 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) throws IOException {
+        /* Enter your code here. */
+        Scanner in = new Scanner(System.in);
+        int n = in.nextInt();
+        List<String> arr = new ArrayList<>();
+        while(n-- > 0)
+        {
+        	int a = in.nextInt();
+        	in.nextLine();
+        }
+    }
+}

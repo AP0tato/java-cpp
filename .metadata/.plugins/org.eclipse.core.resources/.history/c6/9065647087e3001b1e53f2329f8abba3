@@ -1,0 +1,19 @@
+import java.math.BigInteger;
+import java.util.Scanner;
+
+public class Testing3 {
+	public static void main(String... args)
+	{
+		BigInteger num = new BigInteger("0");
+		BigInteger num1 = new BigInteger("0");
+		Scanner in = new Scanner(System.in);
+		int n = in.nextInt();
+		String temp = "";
+		while(!temp.equalsIgnoreCase("quit"))
+		{
+			temp = in.next();
+			String t1 = in.next();
+			String t2 = in.next();
+		}
+	}
+}

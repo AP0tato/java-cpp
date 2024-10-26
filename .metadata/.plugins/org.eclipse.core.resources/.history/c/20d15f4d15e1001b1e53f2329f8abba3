@@ -1,0 +1,28 @@
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.regex.*;
+
+
+
+public class Solution {
+    public static void main(String[] args) throws IOException {
+    	System.out.println(isPalindrome(121));
+    }
+    
+    public static boolean isPalindrome(int x) {
+    	String s = String.valueOf(x);
+    	String r = "", r1 = "";
+    	int even = s.length()%2;
+    	
+    	for(int i = 0, j = s.length(); i < s.length()/2+even; i++, j--)
+    	{
+    		r += s.charAt(i);
+    		r1 += s.charAt(j);
+    	}
+    	return true;
+    }
+}

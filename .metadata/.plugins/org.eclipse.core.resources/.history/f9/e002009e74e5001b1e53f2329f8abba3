@@ -1,0 +1,22 @@
+import java.util.Arrays;
+import java.util.SortedSet;
+import java.util.TreeSet;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+
+
+public class Solution {
+    public static void main(String[] args) {
+    	int[] arr = {-1,-2,-3,-4,-5};
+    	System.out.println(countOdds(3, 7));
+    }
+    
+    public static int countOdds(int low, int high) {
+    	int count = 0;
+        if(low%2==0) {low+=2; count++;}
+        if(high%2==0) high--;
+        count = countOdds(low, high)
+        return count;
+    }
+}

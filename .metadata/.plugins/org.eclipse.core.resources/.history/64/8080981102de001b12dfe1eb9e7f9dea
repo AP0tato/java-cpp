@@ -1,0 +1,21 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) throws IOException {
+        /* Enter your code here. */
+        Scanner in = new Scanner(System.in);
+        String str = "";
+        while(in.hasNext())
+        {
+            str = in.nextLine();
+            if(Pattern.matches("java", str)){ System.out.println("Java"); break; }
+            else if(Pattern.matches("#include", str)){ System.out.println("C"); break; }
+            else { System.out.println("Python"); break; }
+        }
+    }
+}

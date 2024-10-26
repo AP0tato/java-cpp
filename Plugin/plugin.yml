@@ -1,0 +1,10 @@
+main: tld.example.myplugin.Main
+name: FirstPlugin
+version: 1.0
+author: me
+description: An Example plugin
+commands:
+  mycommand:
+    description: An example command
+    usage: /mycommand
+    permission: myplugin.mycommand

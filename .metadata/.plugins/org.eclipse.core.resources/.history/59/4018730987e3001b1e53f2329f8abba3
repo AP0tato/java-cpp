@@ -1,0 +1,15 @@
+import java.math.BigInteger;
+import java.util.Scanner;
+
+public class Testing3 {
+	public static void main(String... args)
+	{
+		BigInteger num = new BigInteger("");
+		Scanner in = new Scanner(System.in);
+		int n = in.nextInt();
+		while(n-- > 0)
+		{
+			
+		}
+	}
+}

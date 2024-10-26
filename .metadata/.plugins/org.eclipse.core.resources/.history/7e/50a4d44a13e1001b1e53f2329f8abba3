@@ -1,0 +1,34 @@
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.regex.*;
+
+
+
+public class Solution {
+    public static void main(String[] args) throws IOException {
+    	ListNode a = new ListNode(2, new ListNode(4, new ListNode(3))), b = new ListNode(5, new ListNode(6, new ListNode(4)));
+    	ListNode c = addTwoNumbers(a, b);
+    	while(c!=null)
+    	{
+    		System.out.print(c.val);
+    		c = c.next;
+    	}
+    }
+    
+    public int reverse(int x) {
+        int reverse = 0;
+        if(x > Integer.MAX_VALUE)
+        while(x != 0)
+        {
+            int digit = x%10;
+            reverse = reverse * 10 + digit;
+            x/=10;
+        }
+        return reverse;
+    }
+    
+}

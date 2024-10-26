@@ -1,0 +1,6 @@
+11:40:48 **** Build of configuration Debug for project C++ Stuff ****
+make all 
+make: Nothing to be done for `all'.
+
+11:40:48 Build Finished. 0 errors, 0 warnings. (took 191ms)
+

@@ -1,0 +1,25 @@
+import java.util.Arrays;
+import java.util.SortedSet;
+import java.util.TreeSet;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+
+
+public class Solution {
+    public static void main(String[] args) {
+    	int[] arr = {-1,-2,-3,-4,-5};
+    }
+    
+    public boolean isPalindrome(int x) {
+    	String r = "", r1 = "";
+    	int even = String.valueOf(x).length()%2;
+    	
+    	for(int i = 0, j = String.valueOf(x).length()-1; i < String.valueOf(x).length()/2+even; i++, j--)
+    	{
+    		r += String.valueOf(x).charAt(i);
+    		r1 += String.valueOf(x).charAt(i);
+    	}
+    	return r.equals(r1)?true:false;
+    }
+}

@@ -1,0 +1,23 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner in = new Scanner(System.in);
+        Pattern p = Pattern.compile("[@#]hackerrank");
+        Matcher m;
+        int n = in.nextInt();
+        in..nextLine();
+        String s = "";
+        while(in.hasNext())
+        {
+        	s += in.nextLine() + "\n";
+        }
+        s.toLowerCase();
+    }
+}

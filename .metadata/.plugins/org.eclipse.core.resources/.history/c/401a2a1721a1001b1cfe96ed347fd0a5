@@ -1,0 +1,72 @@
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.ItemEvent;
+import java.awt.event.ItemListener;
+
+import javax.swing.*;
+import java.util.*;
+
+public class Panel extends JPanel implements ActionListener{
+	static final int WIDTH = 700;
+	static final int HEIGHT = 450;
+	int delay = 1000;
+	Dimension SCREEN_SIZE = new Dimension(WIDTH, HEIGHT);
+	JButton start, stop;
+	Font myFont = new Font("Ink Free", Font.BOLD, 10);
+	JCheckBox type;
+	JCheckBox hold;
+	boolean running;
+	Robot robot;
+	JTextField field;
+	
+	Panel() {
+		type = new JCheckBox("Right Click");
+		hold = new JCheckBox("Hold Button");
+		
+		field = new JTextField();
+		field.setEditable(true);
+		field.setFont(myFont);
+		
+		start = new JButton("Start");
+		stop = new JButton("Stop");
+		
+		this.setPreferredSize(SCREEN_SIZE);
+		this.add(hold);
+		this.add(type);
+		this.add(start);
+		this.add(stop);
+	}
+	
+	public void start() {
+		running = true;
+	}
+	
+	public void stop() {
+		running = false;
+	}
+	
+	public static void click() {
+		
+	}
+	
+	public static void left() {
+		
+	}
+	
+	public static void right() {
+		
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		
+	}
+}
+
+class event implements ItemListener{
+	@Override
+	public void itemStateChanged(ItemEvent e) {
+		
+	}
+}

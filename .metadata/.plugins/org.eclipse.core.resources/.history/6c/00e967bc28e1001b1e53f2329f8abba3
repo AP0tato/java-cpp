@@ -1,0 +1,27 @@
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+
+
+public class Solution {
+    public static void main(String[] args) throws IOException {
+    	String s = ""
+    			+ "^(\\+-(\\.\\d+)?[0-9]*)"
+    			+ "\\d*"
+    			+ "(\\.\\d+)?"
+    			+ "(e|E\\+?\\d+)?"
+    			+ "$";
+    	System.out.println(s.equals(""));
+    }
+    
+    public String addBinary(String a, String b) {
+        int a1 = 0bInteger.parseInt(a);
+        int b1 = 0b+b;
+    }
+}

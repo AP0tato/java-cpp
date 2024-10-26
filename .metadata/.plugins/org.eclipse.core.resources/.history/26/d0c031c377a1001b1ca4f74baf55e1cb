@@ -1,0 +1,15 @@
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+
+public class Panel extends JPanel implements ActionListener{
+	Dimension SCREEN_SIZE;
+	Panel() {
+		
+	}
+	
+	@Override
+	public static void actionPerformed(ActionEvent e) {
+		
+	}
+}

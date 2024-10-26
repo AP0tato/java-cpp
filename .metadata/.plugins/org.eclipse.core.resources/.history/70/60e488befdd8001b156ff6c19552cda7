@@ -1,0 +1,43 @@
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.regex.*;
+
+
+
+public class Solution {
+    public static void main(String[] args) throws IOException {
+        int changes = 0, first, last, i = 0;
+        Scanner in = new Scanner(System.in);
+        int n = in.nextInt();
+        int[] arr = new int[n];
+        while(i < n)
+        {
+            arr[i] = in.nextInt();
+            i++;
+        }
+        
+        for(int a = 0; i < n; i++)
+        {
+            for(int j = 0; j < n - 1; j++)
+            {
+                int temp = arr[j];
+                int temp1 = arr[j+1];
+                if(temp1 > temp)
+                {
+                    arr[j] = temp1;
+                    arr[j+1] = temp;
+                    changes++;
+                }
+            }
+        }
+        first = arr[0];
+        last = arr[n-1];
+        System.out.println("Array is sorted in " + changes + " swaps.\n"
+        		+ "First element: " + first
+        		+ "Last element: " + last);
+    }
+}

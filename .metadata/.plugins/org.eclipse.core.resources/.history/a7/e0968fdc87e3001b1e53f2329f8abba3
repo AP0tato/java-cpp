@@ -1,0 +1,38 @@
+import java.math.BigInteger;
+import java.util.Scanner;
+
+public class Testing3 {
+	public static void main(String... args)
+	{
+		BigInteger num;
+		BigInteger num1;
+		Scanner in = new Scanner(System.in);
+		int n = in.nextInt();
+		String temp = "";
+		while(!temp.equalsIgnoreCase("quit"))
+		{
+			temp = in.next();
+			String t1 = in.next();
+			String t2 = in.next();
+			num = new BigInteger(temp);
+			num1 = new BigInteger(t2);
+			
+			switch(t1)
+			{
+				case "x":
+					System.out.println(num.multiply(num1));
+					break;
+				case "/":
+					break;
+				case "^":
+					break;
+				case "+":
+					break;
+				case "-":
+					break;
+				default:
+					break;
+			}
+		}
+	}
+}

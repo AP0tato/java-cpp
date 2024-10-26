@@ -1,0 +1,28 @@
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.regex.*;
+
+
+
+public class Solution {
+    public static void main(String[] args) throws IOException {
+    	System.out.println(reverse(-2147483648));
+    }
+    
+    public static int reverse(int x) {
+        long reverse = 0;
+        while(x != 0)
+        {
+            int digit = x%10;
+            if(reverse*10+digit > Integer.MAX_VALUE || reverse*10+digit<Integer.MIN_VALUE) return 0;
+            reverse = reverse * 10 + digit;
+            x/=10;
+        }
+        return (int) reverse;
+    }
+    
+}

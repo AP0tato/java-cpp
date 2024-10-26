@@ -1,0 +1,27 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. */
+        Scanner in = new Scanner(System.in);
+        int n = in.nextInt();
+        in.nextLine();
+        List<String> arr = new ArrayList<>();
+        Pattern p = Pattern.compile("[0-9]{1,3}(-?)[0-9]{1,3}(-?)[0-9]{4,10}");
+        Matcher m;
+        while(n-- > 0)
+        {
+        	arr.add(in.nextLine());
+        }
+        for(String i : arr)
+        {
+        	m = p.matcher(i);
+        	System.out.println("CountryCode="+m.group(1)+",LocalAreaCode="+m.group(2)+",Number="+m.group(3)););
+        }
+    }
+}

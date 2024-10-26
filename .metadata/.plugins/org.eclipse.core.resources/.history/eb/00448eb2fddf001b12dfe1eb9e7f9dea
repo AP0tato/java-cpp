@@ -1,0 +1,56 @@
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.regex.*;
+
+class Result {
+
+    /*
+     * Complete the 'isBalanced' function below.
+     *
+     * The function is expected to return a STRING.
+     * The function accepts STRING s as parameter.
+     */
+
+    public static String isBalanced(String s) {
+        // Write your code here
+        int n = -1;
+        while(true){
+            s = s.replaceAll("\\(\\)","");s = s.replaceAll("\\{\\}","");s = s.replaceAll("\\[]","");s=s.trim();
+            if(s.length()==n)
+                break;
+            else if(s.length()==0)
+                break;
+            n = s.length();
+        }
+        if(s.length()==0)
+            System.out.println("YES");
+        else
+            System.out.println("NO");
+        return (s.length()==0?"YES":"NO");
+    }
+}
+
+public class Solution {
+    public static void main(String[] args) throws IOException {
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
+
+        int t = Integer.parseInt(bufferedReader.readLine().trim());
+
+        for (int tItr = 0; tItr < t; tItr++) {
+            String s = bufferedReader.readLine();
+
+            String result = Result.isBalanced(s);
+
+            bufferedWriter.write(result);
+            bufferedWriter.newLine();
+        }
+
+        bufferedReader.close();
+        bufferedWriter.close();
+    }
+}

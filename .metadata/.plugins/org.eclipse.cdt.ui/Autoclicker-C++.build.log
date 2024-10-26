@@ -1,0 +1,15 @@
+22:58:25 **** Incremental Build of configuration Debug for project Autoclicker-C++ ****
+make all 
+Building target: Autoclicker-C++
+Invoking: MacOS X C++ Linker
+g++  -o "Autoclicker-C++"  ./Main.o   
+Undefined symbols for architecture x86_64:
+  "_main", referenced from:
+     implicit entry/start for main executable
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [Autoclicker-C++] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+
+22:58:25 Build Failed. 2 errors, 0 warnings. (took 358ms)
+

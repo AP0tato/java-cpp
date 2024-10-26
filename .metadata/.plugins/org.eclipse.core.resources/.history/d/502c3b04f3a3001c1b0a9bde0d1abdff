@@ -1,0 +1,28 @@
+package com.hi;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Main {
+	
+	public static void main(String... args) throws Exception {
+		List<Integer> arr = new ArrayList<>();
+		List<Double> ar = new ArrayList<>();
+		arr.add(50);
+		arr.add(100);
+		ar = movingTiles(10, 1, 2, arr);
+		for(double i : ar) System.out.println(i);
+	}
+	//private static float root(double root, double num) { return (float) Math.pow(num, (double) 1/root); }
+	
+	public static List<Double> movingTiles(int l, int s1, int s2, List<Integer> queries) {
+        // Write your code here
+        List<Double> ans = new ArrayList<Double>();
+        final double root2 = Math.sqrt(2);
+        for(int i : queries) {
+        	double r_v = Math.abs(s1-s2);
+        	ans.add(root2*(l-root2));
+        }
+        return ans;
+    }
+}

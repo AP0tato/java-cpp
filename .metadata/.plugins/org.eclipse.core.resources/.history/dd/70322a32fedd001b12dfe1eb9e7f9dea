@@ -1,0 +1,23 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) throws IOException {
+        /* Enter your code here. */
+    	Scanner in = new Scanner(System.in);
+    	Pattern j = Pattern.compile("public"), c = Pattern.compile("#include"), p = Pattern.compile("print\\b");
+    	Matcher m;
+    	String str = "";
+    	while(in.hasNext())
+    	{
+    		str += in.nextLine() + "\n";
+    	}
+    	m = j.matcher(str);
+    	m = c.matcher(str);
+    	m = p.matcher(str);
+    }
+}

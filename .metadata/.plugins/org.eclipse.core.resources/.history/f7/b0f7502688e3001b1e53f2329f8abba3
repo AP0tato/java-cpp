@@ -1,0 +1,41 @@
+import java.math.BigInteger;
+import java.util.Scanner;
+
+public class Testing3 {
+	public static void main(String... args)
+	{
+		BigInteger num;
+		BigInteger num1;
+		int num2;
+		Scanner in = new Scanner(System.in);
+		String temp = "";
+		while(!temp.equalsIgnoreCase("quit"))
+		{
+			temp = in.next();
+			String t1 = in.next();
+			if(t1.equals("^")) num2 = in.nextInt();
+			else {String t2 = in.next();}
+			num = new BigInteger(temp);
+			num1 = new BigInteger(t2);
+			
+			switch(t1)
+			{
+				case "x":
+					System.out.println(num.multiply(num1));
+					break;
+				case "/":
+					System.out.println(num.divide(num1));
+					break;
+				case "^":
+					System.out.println(num.pow(Integer.parseInt(num1)));
+					break;
+				case "+":
+					break;
+				case "-":
+					break;
+				default:
+					break;
+			}
+		}
+	}
+}

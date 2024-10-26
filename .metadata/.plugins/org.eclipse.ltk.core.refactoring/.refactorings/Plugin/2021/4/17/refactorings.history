@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Plugin/builg.xml&apos; to &apos;build.xml&apos;" description="Rename resource &apos;builg.xml&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="builg.xml" name="build.xml" stamp="1619145272086" updateReferences="true"/>
+</session>

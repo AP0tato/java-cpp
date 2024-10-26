@@ -1,0 +1,79 @@
+import java.util.*;
+
+class Algorithms {
+	public static Scanner in = new Scanner(System.in);
+	
+	public static void main(String[] args) {
+		//bees();
+		//divisionalSums();
+		//divisionalNumbers();
+		reverseNumbers();
+	}
+	
+	public static void bees() {
+		int total = 0, total1 = 0, total2 = 1;
+		System.out.println("Enter the generation:");
+		int gen = in.nextInt();
+		in.close();
+		for(int i = 0; i < gen; i++) {
+			total = total1 + total2;
+			total1 = total2;
+			total2 = total;
+		}
+		System.out.println("The amount of bees in " + gen + " generation(s) is " + total + " bees.");
+	}
+	
+	public static void divisionalSums() {
+		System.out.println("Enter the length of the list:");
+		int len = in.nextInt();
+		System.out.println("Enter divisor:");
+		int divisor = in.nextInt();
+		System.out.println("Enter the numbers:");
+		int count = 0;
+		int[] ar = new int[len];
+		while(count < len) {
+			ar[count] = in.nextInt();
+			count++;
+		}
+		in.close();
+	    int pairs = 0;
+	    for(int i = 0; i < ar.length; i++) {
+	        for(int j = len - 1; j > 0; j--) {
+	            if((ar[i] + ar[j]) % divisor == 0 && j > i) {
+	                pairs++;
+	            }
+	        }
+	    }
+	    System.out.println("The amount of pairs that can be divided by " + divisor + " is " + pairs + " pairs.");
+	}
+	
+	public static void divisionalNumbers() {
+		System.out.println("Enter range, First number, Last number:");
+		int num1 = in.nextInt();
+		int num2 = in.nextInt();
+		System.out.println("Enter divisor:");
+		int num3 = in.nextInt();
+		in.close();
+		int count = 0;
+		if(num2 < 0 && num1 > 0) {
+			for(int i = num2; i < num1; i++) {if(i % num3 == 0) count++;}
+		} else if(num1 == num2) {
+			if(num1 % num3 == 0) count++;
+		} else {
+			for(int i = num1; i < num2; i++) {if(i % num3 == 0) count++;}
+		}
+		System.out.println("The amount of numbers that are divisible by " + num3 + " from " + num1 + " to " + num2 + " is " + count + ".");
+	}
+	
+	public static void reverseNumbers() {
+		int num, reversed = 0;
+		System.out.println("Enter number to be reversed:");
+		num = in.nextInt();
+		while(num != 0) {
+			int digit = num % 10;
+			reversed = reversed * 10 + digit;
+			num /= 10;
+		}
+		System.out.println("Reversed Number: " + reversed);
+	}
+}

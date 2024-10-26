@@ -1,0 +1,23 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    	Scanner in = new Scanner(System.in);
+    	int n = in.nextInt();
+    	in.nextLine();
+    	while(n-- > 0)
+    	{
+    		String s = in.nextLine();
+    		if(Pattern.matches("(^hackerrank.*hackerrank$)|(^hackerrank$)", s)) System.out.println(0);
+    		else if(Pattern.matches(".*hackerrank$", s)) System.out.println(2);
+    		else if(Pattern.matches("^hackerrank.*", s)) System.out.println(1);
+    		else if(Pattern.matches(".*hackerrank.*", s)) System.out.println(-1);
+    	}
+    }
+}

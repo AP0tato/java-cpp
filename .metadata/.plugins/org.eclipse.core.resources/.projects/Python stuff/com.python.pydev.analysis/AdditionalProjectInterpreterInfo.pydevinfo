@@ -1,0 +1,81 @@
+-- VERSION_5
+-- START DISKCACHE_3
+/Users/Ali/eclipse-workspace/.metadata/.plugins/org.eclipse.core.resources/.projects/Python stuff/com.python.pydev.analysis/v2_indexcache
+Project|1624821625408226739|/Users/Ali/eclipse-workspace/Python stuff/Project.py
+Shell|1620073644415139761|/Users/Ali/eclipse-workspace/Python stuff/Shell.py
+Bitwise|1621550397340100524|/Users/Ali/eclipse-workspace/Python stuff/Bitwise.py
+Things|1624733286464844788|/Users/Ali/eclipse-workspace/Python stuff/Things.py
+Stuff|1624731709749026000|/Users/Ali/eclipse-workspace/Python stuff/Stuff.py
+LoginPage|1615999080000000000|/Users/Ali/eclipse-workspace/Python stuff/LoginPage.py
+Password|1624747143425311197|/Users/Ali/eclipse-workspace/Python stuff/Password.py
+-- END DISKCACHE
+-- START DICTIONARY
+17
+8=Things
+15=logIn
+17=logIn.__init__
+10=LoginPage
+2=Project
+7=/Users/Ali/eclipse-workspace/Python stuff/Things.py
+12=Shell
+6=Bitwise
+9=/Users/Ali/eclipse-workspace/Python stuff/LoginPage.py
+5=/Users/Ali/eclipse-workspace/Python stuff/Bitwise.py
+1=/Users/Ali/eclipse-workspace/Python stuff/Project.py
+11=/Users/Ali/eclipse-workspace/Python stuff/Shell.py
+14=Stuff
+13=/Users/Ali/eclipse-workspace/Python stuff/Stuff.py
+16=Thing
+3=/Users/Ali/eclipse-workspace/Python stuff/Password.py
+4=Password
+-- END DICTIONARY
+-- START TREE 1
+40
+AI|1|AI!1^53#5*18@
+__i|1|__init__!3^1#5*34@
+an_|1|an_d!5^35#1*51@
+boa|2|board!1^9#1*19@board!7^13#1*67@
+can|1|canWin!1^25#5*18@
+cha|1|changePassword!3^4#5*34@
+cre|1|create_board!1^12#5*18@
+eig|2|eighteen!5^18#1*51@eight!5^8#1*51@
+ele|1|eleven!5^11#1*51@
+fif|1|fifteen!5^15#1*51@
+fiv|1|five!5^5#1*51@
+fou|2|fourteen!5^14#1*51@four!5^4#1*51@
+gam|2|gameboard_pc!7^147#5*66@gameboard_pl!7^64#5*66@
+get|2|get_text_pc!7^113#5*66@get_text!7^28#5*66@
+isd|1|isDraw!1^37#5*18@
+isf|2|isfull!7^56#5*66@isfree!7^52#5*66@
+l_s|1|l_shift!5^34#1*51@
+log|1|logIn!9^1#7*81@
+nin|2|nine!5^9#1*51@nineteen!5^19#1*51@
+no_|1|no_t!5^38#1*51@
+num|1|num!11^2#1*99@
+o_r|1|o_r!5^36#1*51@
+one|1|one!5^1#1*51@
+pc|1|pc!7^81#5*66@
+pla|1|play!7^191#5*66@
+r_s|1|r_shift!5^33#1*51@
+ref|1|refresh_board!1^18#5*18@
+run|1|run!1^44#5*18@
+sev|2|seventeen!5^17#1*51@seven!5^7#1*51@
+sig|1|sign!7^9#1*67@
+six|2|six!5^6#1*51@sixteen!5^16#1*51@
+ten|1|ten!5^10#1*51@
+thi|4|thirty!5^30#1*51@thirteen!5^13#1*51@thirty_one!5^31#1*51@Thing!13^1#7*113@
+thr|1|three!5^3#1*51@
+tur|1|turn!1^10#1*19@
+twe|11|twenty_six!5^26#1*51@twenty_seven!5^27#1*51@twenty!5^20#1*51@twenty_five!5^25#1*51@twenty_one!5^21#1*51@twenty_three!5^23#1*51@twenty_four!5^24#1*51@twenty_two!5^22#1*51@twenty_nine!5^29#1*51@twelve!5^12#1*51@twenty_eight!5^28#1*51@
+two|1|two!5^2#1*51@
+win|1|winner!7^17#5*66@
+wit|2|withpc!7^164#5*66@withplayer!7^177#5*66@
+xor|1|xor!5^37#1*51@
+-- END TREE
+-- START TREE 2
+4
+__i|2|__init__!15&9^2#9*82@__init__!16&13^2#9*114@
+cha|1|changePassword!15&9^5#9*82@
+pas|1|password!17&9^3#9*83@
+thi|4|thing!16&13^5#9*114@thing1!16&13^28#9*114@thingy!16&13^19#9*114@thing2!16&13^40#9*114@
+-- END TREE

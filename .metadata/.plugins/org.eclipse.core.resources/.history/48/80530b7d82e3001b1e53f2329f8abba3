@@ -1,0 +1,21 @@
+import java.util.SortedSet;
+import java.util.TreeSet;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+
+
+public class Solution {
+    public static void main(String[] args) {
+    }
+    
+    public int findJudge(int n, int[][] trust) {
+        int judge = 0;
+        SortedSet<Integer> set = new TreeSet<>();
+        for(int[] i : trust)
+        {
+            set.add(i[0]);
+        }
+        return judge;
+    }
+}

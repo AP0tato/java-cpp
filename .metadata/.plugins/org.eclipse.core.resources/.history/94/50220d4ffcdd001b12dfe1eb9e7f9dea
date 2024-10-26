@@ -1,0 +1,33 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. */
+        Scanner in = new Scanner(System.in);
+        int n = in.nextInt(), count = 0;
+        String str = "";
+        Pattern p;
+        Matcher m;
+        while(n-- > 0)
+        {
+        	str += in.nextLine() + " ";
+        }
+        n = in.nextInt();
+        in.nextLine();
+        while(n-- > 0)
+        {
+        	uk=new StringBuilder((br.readLine()));
+            uk.insert((uk.indexOf("our")+2),'?'); 
+            p=Pattern.compile("\\b"+uk.toString()+"\\b");
+            m=p.matcher(str);
+            count=0;
+            while(m.find()) ++count System.out.println(count);      
+          	}
+        }
+    }
+}
