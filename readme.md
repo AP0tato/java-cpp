@@ -1,4 +1,4 @@
-# Ali's Learning Projects Workspace
+# Learning Projects Workspace
 
 This workspace is a collection of various projects and experiments created to learn and practice Java, as well as some C++, Python, and OpenGL-related technologies. Each folder represents a different project, experiment, or area of exploration.
 
